@@ -72,6 +72,7 @@
 		curl_setopt($c, CURLOPT_FOLLOWLOCATION,1);  
 		curl_setopt($c, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6");
 		$output = curl_exec($c);
+		return $output;
 	}
 
 	if(isset($_POST['Pin']) && !empty($_POST['Pin'])) {
